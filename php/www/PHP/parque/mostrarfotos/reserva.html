@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reserva de entrada</title>
+<!--Número máximo de personas por habitación
+    Niños gratis = habitación
+    Al menos 1 adulto
+    habitación doble = 50€
+    habitación lujo = 80
+    habitación suite = 120
+    Regimen 10 eu media pensión, por persona/noche
+    Regimen 20 eu pensión completa/persona/noche
+    Cancelación 2.5€/habitación/noche
+    fecha de reserva debe ser suerior a la fecha de hoy -->
+<style type="text/css">
+
+ * {margin:0; padding:0;}
+
+body{
+	background-color: #8CE8FB;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+  font-size: 1.1em;
+}
+
+p.titulo {
+	color: #8B0002;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 35px;
+  width: 90%;
+  margin: 10px auto;
+	text-align: center;
+	background-image: linear-gradient(180deg,rgba(227,224,224,1.00) 0%,rgba(126,124,124,1.00) 100%);
+	box-shadow: 2px 2px 3px #000000;
+	text-shadow: 0px 0px 4px #870305;
+}
+
+#contenedor {
+	background-color: #7AA4F8;
+	width: 700px;
+	height: 560px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px #313131;
+    margin: 5px auto;
+}
+
+
+iframe {
+  display: inline-block;
+	width: 695px;
+	height: 410px;
+  margin: 5px auto;
+}
+#boton {
+  width: 120px;
+  height: 35px;
+  margin:5px 100px;
+  box-shadow: 3px 3px 3px black;
+}
+#boton:hover {
+  box-shadow: 0px 0px 3px black;
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+}
+input[type="number"],input[type="date"], select{
+  font-size: 1.1em;
+  width: 200px;
+}
+
+</style>
+</head>
+
+<body>
+
+  
+
+  <p class="titulo">
+    Título
+  </p>
+  <div id="contenedor">
+
+     
+    <form action="reserva.php" method="get" target="resultado" id="form01">
+
+      <label for="adultos">Adultos:</label>
+      <input type="number" id="adultos" name="adultos" min="0" max="10" step="1" value="0" placeholder="0">
+
+      <label for="ninos">Niños:</label>
+      <input type="number" id="ninos" name="ninos" min="0" max="10" step="1" value="0" placeholder="0"><br> 
+
+      <label for="entrada">Entrada</label>
+      <input type="date" name="entrada" id="entrada">
+
+      <label for="salida">Salida</label>
+      <input type="date" name="salida" id="salida"><br>
+
+      <label>Habitación</label>
+      <select id="habitacion" name="habitacion">
+            <option value="1">Habitación doble</option>
+            <option value="2">Superior</option>
+            <option value="3">Suite</option>        
+      </select>
+
+      <label>Régimen</label>
+      <select id="regimen" name="regimen">
+            <option value="1">Desayuno</option>
+            <option value="2">Comida</option>
+            <option value="3">Cena</option>        
+      </select>
+
+      <label for="cancelacion">Cancelación</label>
+      <input type="checkbox" name="cancelacion" id="cancelacion">
+
+
+
+        <div class="contenedorBoton">
+        <br>
+          <input type="submit" value="Siguiente" id="boton">
+        <br>
+
+        </div>      
+    </form>
+    <br>
+    <iframe name="resultado" id="resultado"></iframe>
+  </div>
+
+
+</body>
+</html>

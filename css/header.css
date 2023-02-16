@@ -1,0 +1,103 @@
+#div_he1, #div_he2,#div_he3{
+			display: inline-block;
+		}
+
+		header{
+			background-color: #106EB4;
+			position: relative;
+			margin-top: 20px;
+			padding: 10px;
+			border-radius: 10px;
+
+		}
+
+		body{
+			width: 90%;
+			margin: auto;
+			background-color: #96BAFF;
+		}
+
+		#div_he1{
+			**background-color: yellow;
+			width: 30%;
+			position: relative;
+		}
+
+		#div_he2{
+			**background-color: blue;
+			position: relative;
+			width: 65%;
+			padding: 20px 0px 20px 50px;
+			bottom: 30px;
+			**margin-right: 0px;
+
+
+
+		}
+		#div_he3{
+			**background-color: red;
+			width: 100%;
+
+		}
+
+		#li_header{
+			text-decoration-style: none;
+			display:inline-block;
+			padding: 5px;
+			width: 12%;
+			font-size: 0.7em;
+			background-color: #DFEEEA;
+			text-align: center;
+			margin-left: 0.7%;
+			border-radius: 10px;
+
+		}
+
+		#li_header:hover{
+			background-color: #A7C4BC;
+		}
+
+		#logotipo{
+			width: 90px;
+			height: 90px;
+			padding: 5px;
+			border-radius: 20px;
+		}
+		
+		 header div p{
+			width: 55%;
+			**background-color:orange;
+			display: inline-block;
+			font-size: 1.5em;
+			text-align: right;
+			margin-left: 20px;
+			margin-top: 0px;
+			color: white;
+		}
+
+	
+		a{
+			text-decoration: none;
+			color: #2B2B2B;
+
+		}
+
+		#ul_header{
+			background-color: #2B2B2B;
+			padding: 20px;
+			border-radius: 10px;
+
+
+		}
+		#tel_contacto{
+			width: 35%;
+			**background-color: brown;
+			display: inline-block;
+			font-size: 3em;
+			margin-left: 20px;
+			color: white;
+
+		}
+
+	
+

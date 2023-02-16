@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Global Raiman SL - Inicio</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/article.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="icon" type="image/png" href="images/favicon.jpg">
+	<script type="text/javascript" src="js/slider.js"></script>
+	
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			**font-size: 1.5em;
+			box-sizing:border-box;
+		}	
+
+		@media only screen and (max-width: 600px) {
+  			header {
+   			 background-color: black;
+ 		 }
+
+	 	 #li_header{
+		  	width: 100%;
+		  	margin-top: 10px;
+		  }
+
+		  header div p{
+	  			width: 100%;
+	  			font-size: 1em;
+	  		}
+
+	  		#tel_contacto{
+	  			width: 100%;
+	  			font-size: 1.5em;
+	  			text-align: right;
+	  		}
+	}
+
+
+	@media only screen and (max-width: 960px) {
+	  		header {
+	    		background-color: red;
+	  			}
+
+	  		#li_header{
+			  	width: 100%;
+			  	margin-top: 10px;
+	  		}
+
+	  		header div p{
+	  			width: 100%;
+	  			font-size: 1em;
+	  		}
+
+	  		#tel_contacto{
+	  			width: 100%;
+	  			font-size: 1.5em;
+	  			text-align: right;
+	  		}
+
+	  		.articulo{
+	  			width: 100%;
+					height: 400px
+	  		}
+
+	  		
+					#art1{
+							margin-left: 10px;
+							**top: 420px;
+					}
+					#art2{
+						margin-left: 10px;
+						top: 420px;
+					}
+					#art3{
+						margin-left: 10px;
+						top: 830px;
+					}
+					#art4{
+						top: 1240px;
+					}
+					#art5{
+						top: 1650px;
+						margin-left: 10px;
+					}
+					#art6{
+						top: 2060px;
+						margin-left: 10px;
+					}
+					#art7{
+						top: 2470px;
+					}
+					#art8{
+						top: 2880px;
+						margin-left: 10px;
+					}
+					#art9{
+						top: 3290px;
+						margin-left: 10px;
+					}
+					.foot{			
+						top:3710px;
+						
+					}*/
+
+					.style_img_article{
+					width: 70%;
+		}
+	}			
+		
+	</style>
+
+</head>
+<body>
+	<header>
+		<div id="div_he1">
+			<img src="images/logo.png" id="logotipo">
+			
+		</div>
+		<div id="div_he2">
+			<p>Información y Contratación <br>Teléfono de Contacto </p>
+			<h3 id="tel_contacto">639 043 155</h3>
+		</div>
+		<div id="div_he3">
+			<ul id="ul_header">
+				<li id="li_header"><a href="#">INICIO</a></li>
+				<li id="li_header"><a href="templates/formulariotelefono.html">TELEFONÍA</a></li>
+				<li id="li_header"><a href="templates/formenergia.html">ENERGÍAS</a></li>
+				<li id="li_header"><a href="templates/formseguros.html">SEGUROS</a></li>
+				<li id="li_header"><a href="templates/form">ALARMAS</a></li>
+				<li id="li_header"><a href="templates/formcajoncobros.html">CAJÓN DE COBROS</a></li>
+				<li id="li_header"><a href="templates/formcursosbonificados.html">CURSOS BONIFICADOS</a></li> 
+			</ul>
+		</div>
+	</header>
+
+	<!--De aquí en adelante se define el SLIDER -->
+
+		<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+   <!--  <div class="numbertext">1 / 3</div> -->
+    <img src="images/s1.png" style="width:100%" id="img1">
+   <!--  <div class="text">Imagen 1</div> -->
+  </div>
+
+  <div class="mySlides fade">
+    <!-- <div class="numbertext">2 / 3</div> -->
+    <img src="images/s2.png" style="width:100% " id="img2">
+   <!--  <div class="text">Imagen 2</div> -->
+  </div>
+
+  <div class="mySlides fade">
+   <!--  <div class="numbertext">3 / 3</div> -->
+    <img src="images/s3.png" style="width:100%" id="img3">
+   <!--  <div class="text"></div>Imagen 3 -->
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<!--Fin de SLIDER -->
+
+<!--Inicio de artículos -->
+<div id="container_articles">
+
+	<div class="articulo" id="art1">
+		<div><a href="templates/formulariotelefono.html"><img src="images/operadoras/telefonia_g.png" class="style_img_article"></a></div>
+		<div class="articulo_footer"><h3>Telefonía</h3>
+				<p>Fibra 300MB + Fijo ilimitaod + Móvil ilimitado + 25GB de Datos, desde 43€.</p>
+						<a href="templates/formtelefono.html">Sáca un presupuesto</a></div>
+	</div>
+
+	<div class="articulo" id="art2">
+		<div><a href="templates/formenergia.html"><img src="images/operadoras/energia_g.png" class="style_img_article"></a></div>
+		<div class="articulo_footer"><h3>Energía</h3></div>
+	</div>
+
+	<div class="articulo" id="art3">
+		<div><a href="templates/formseguros.html"><img src="images/operadoras/seguro_g.png" class="style_img_article"></a></div>
+		<div class="articulo_footer"><h3>Seguros</h3></div>
+	</div>
+	<div class="articulo" id="art4">
+		<div><a href="templates/formalarmas.html"><img src="images/operadoras/alarmas_g.png" class="style_img_article"></a></div>
+		<div class="articulo_footer"><h3>Alarmas</h3></div>
+	</div>
+	<div class="articulo" id="art5">
+		<div><a href="templates/forcajoncobros.html"><img src="images/operadoras/cajoncobros_g.png" class="style_img_article"></a></div>
+		<div class="articulo_footer"><h3>Cajón de Cobros</h3></div>
+	</div>
+	<div class="articulo" id="art6">
+		<div><a href="templates/formcursosbonificados.html"><img src="images/operadoras/cursosbonificados_g.png" class="style_img_article"></a></div>
+		<div class="articulo_footer"><h3>Cursos bonificados</h3></div>
+	</div>
+	<div class="articulo" id="art7">
+		<div><a href="#"><img src="images/operadoras/trabajando_g.png" class="style_img_article"></a></div>
+		<div class="articulo_footer">Este es un texto</div>
+	</div>
+	<div class="articulo" id="art8">
+		<div><a href="#"><img src="images/operadoras/trabajando_g.png" class="style_img_article"></a></div>
+		<div class="articulo_footer">Este es un texto</div>
+	</div>
+	<div class="articulo" id="art9">
+		<div><a href="#"><img src="images/operadoras/trabajando_g.png" class="style_img_article"></a></div>
+		<div class="articulo_footer">Este es un texto</div>
+	</div>	
+		
+</div>
+
+<footer class="foot">
+	<h2><a href="#">globalraiman.com</a> tu comparador de precios</h2>
+	
+	<div>
+		<ul>
+			<li class="link_menu_footer"><a href="templates/telefonia.html">Telefonía</a></li>
+			<li class="link_menu_footer"><a href="">Energías</a></li>
+			<li class="link_menu_footer"><a href="">Seguros</a></li>
+			<li class="link_menu_footer"><a href="">Alarmas</a></li>
+			<li class="link_menu_footer"><a href="">Cajón de cobros</a></li>
+			<li class="link_menu_footer"><a href="">Cursos bonificados</a></li>
+		</ul>
+	</div>
+	<hr>
+	<div class="div_foot_alineados">
+		<h3>Acerca de Global Raiman SL</h3>
+		<ul>
+			<li class="li_footer"><a href="">¿Cómo funciona?</a></li>
+			<li class="li_footer"><a href="">Sobre nosotros</a></li>
+			<li class="li_footer"><a href="">Últimas noticias</a></li>
+			<li class="li_footer"><a href="">Trabaja con nosotros</a></li>
+			<li class="li_footer"><a href="templates/contacto.html">Contacto</a></li>
+			<br>
+			<br>
+		</ul>
+
+	</div><div class="div_foot_alineados">
+		<h3>Enlaces de Interés</h3>
+		<ul>
+			<li class="li_footer"><a href="">Aseguradoras</a></li>
+			<li class="li_footer"><a href="">Seguros Baratos</a></li>
+			<li class="li_footer"><a href="">Comparativa Seguros</a></li>
+			<li class="li_footer"><a href="">Calcular Seguro</a></li>
+			<li class="li_footer"><a href="">Guía Seguros Coche</a></li>
+			<li class="li_footer"><a href="">Asegurar Coche</a></li>
+			<br>
+		</ul>
+
+	</div><div class="div_foot_alineados">
+		<h3>Redes Sociales</h3>
+		<ul>
+			<li class="div_foot_alineados li_footer"><a href="https://twitter.com/raimanglobal?lang=es" target="_blank"><img src="images/twitter.png"></a></li>
+			<li class="div_foot_alineados li_footer"><a href="https://www.youtube.com/channel/UCVPZse-HwEHSi8FZbxztjOA" target="_blank"><img src="images/youtube.png"></a></li>
+			<br>
+			<br>		
+		</ul>
+		<ul>
+			<li class="div_foot_alineados li_footer"><a href="https://www.facebook.com/globalraiman/"><img src="images/facebook.png" target="_blank"></a></li>
+			<li class="div_foot_alineados li_footer"><a href="https://www.instagram.com/globalraiman/"><img src="images/instagram.png" target="_blank"></a></li>
+			<br>
+			<br>
+			<br>
+		</ul>
+	</div>
+	
+</footer>
+
+
+</body>
+</html>

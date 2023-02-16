@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Reserva de entrada</title>
+<style type="text/css">
+
+ * {margin:0; padding:0;}
+
+body{
+	background-color: #8CE8FB;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+  font-size: 1.1em;
+}
+
+p.titulo {
+	color: #8B0002;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 35px;
+  width: 90%;
+  margin: 10px auto;
+	text-align: center;
+	background-image: linear-gradient(180deg,rgba(227,224,224,1.00) 0%,rgba(126,124,124,1.00) 100%);
+	box-shadow: 2px 2px 3px #000000;
+	text-shadow: 0px 0px 4px #870305;
+}
+
+#contenedor {
+	background-color: #7AA4F8;
+	width: 700px;
+	height: 560px;
+	padding: 10px;
+	box-shadow: 2px 2px 2px #313131;
+    margin: 5px auto;
+}
+
+
+iframe {
+  display: inline-block;
+	width: 695px;
+	height: 410px;
+  margin: 5px auto;
+}
+#boton {
+  width: 120px;
+  height: 35px;
+  margin:5px 100px;
+  box-shadow: 3px 3px 3px black;
+}
+#boton:hover {
+  box-shadow: 0px 0px 3px black;
+}
+
+label{
+    display: inline-block;
+    width: 200px;
+}
+input[type="number"], select{
+  font-size: 1.1em;
+  width: 200px;
+}
+
+</style>
+</head>
+
+<body>
+
+  <p class="titulo">
+    Reserva de entrada
+  </p>
+  <div id="contenedor">
+
+    <form action="parque_v2.php" method="get" target="resultado" id="form01">
+      <label for="estandar">Entrada estandar:</label>
+      <input type="number" id="standar" name="standar" min="0" max="10" step="1" value="0" placeholder="0"> <br>
+
+      <label for="mayor65">Mayores de 65 años</label>
+      <input type="number" id="mayor65" name="mayor65" min="0" max="10" step="1" value="0" placeholder="0"> <br>
+
+      <label for="infantil">Infantil (hasta 12 años)</label>
+      <input type="number" id="infantil" name="infantil" min="0" max="10" step="1" value="0" placeholder="0"> <br>
+
+      <label>Día de la semana:</label>
+        <select id="diaSema" name="diaSema">
+          <option value="1">Lunes</option>
+          <option value="1">Martes</option>
+          <option value="1">Miércoles</option>
+          <option value="1">Jueves</option>
+          <option value="2">Viernes</option>
+          <option value="2">Sábado</option>
+          <option value="2">Domingo</option>
+        </select><br>
+
+        <div class="contenedorBoton">
+        <br>
+          <input type="submit" value="Mostrar" id="boton">
+        <br>
+
+        </div>      
+    </form>
+    <br>
+    <iframe name="resultado" id="resultado"></iframe>
+  </div>
+
+
+</body>
+</html>

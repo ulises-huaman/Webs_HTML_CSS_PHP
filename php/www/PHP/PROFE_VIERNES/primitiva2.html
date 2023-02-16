@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Primitiva</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		body{
+			width: 90%;
+			background-color: #A3E4D7;
+		}
+
+		#contenedor{
+			background-color: blue;
+			width: 90%;
+			margin: 20px auto;
+
+		}
+
+		iframe{
+			display: inline-block;
+			width: 90%;
+			background-color: green;
+			margin-left: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+		<form action="primitiva2.php" method="post"  target="resultado" id="form01">
+			<br>
+				<input type="submit" id="boton" name="boton" value="Calcular">
+				<br>
+				
+		</form>
+		<iframe name="resultado" id="resultado"></iframe>
+	</div>
+</body>
+</html>

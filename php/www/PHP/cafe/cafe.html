@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sutidor de café</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		body{
+			width: 90%;
+			margin: auto;
+		}
+
+		iframe{
+			width: 90%;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor" id="contenedor">
+
+		<form action="cafe.php" method="get" target="resultado" id="formularioCafe">
+			<label for="cantidad">Cantidad:</label>
+			<input type="number" id="cantidad" name="cantidad" min="0" max="10" step="1" value="0" placeholder="0">	
+
+			<label>Tipo de café:</label>
+			<select id="tipo" name="tipo">
+				<option value="1">Descafeinado</option>
+				<option value="2">Suave</option>
+				<option value="3">Intenso</option>
+			</select>
+
+			<label>Tamaño:</label>
+			<select id="tamano" name="tamano">
+				<option value="1">Pequeño</option>
+				<option value="2">Mediano</option>
+				<option	value="3">Grande</option>
+			</select>
+
+			<label>Con leche:</label>
+			<select id="leche" name="leche">
+				<option value="1">Entera</option>
+				<option value="2">Semidesnatada</option>
+				<option value="3">Desnatada</option>
+				<option value="4">Vegetal</option>
+			</select>
+
+			<label for="llevar">Para llevar:</label>
+			<input type="checkbox" name="llevar" id="llevar">
+
+		<div class="contenedorBoton">
+        <br>
+          <input type="submit" value="Siguiente" id="boton">
+        <br>
+
+        </div>      
+    </form>
+
+    <br>
+    <iframe name="resultado" id="resultado"></iframe>	
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Reserva de entrada</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-size: 1.1em;
+		}
+
+		body{
+			width: 90%;
+			margin: auto;
+			background: #F8F9F9 ;
+		}
+
+		#contenedor{
+			width: 90%;
+			**background: beige;
+			margin: auto;
+		}
+
+		iframe{
+			width: 90%;
+			height: 400px;
+			margin-left: 5%;
+			border-radius: 10px;
+		}
+		h1{
+			width: 90%;
+			text-align: center;
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #FEF5E7;
+			border-radius: 10px;
+			font-size: 3em;
+		}
+
+		label{
+			display: inline-block;
+			width: 20%;
+		}
+
+		form{
+			width: 80%;
+			margin: auto;
+		}
+
+		input{
+			width: 70%;
+			margin: 10px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		select{
+			width: 73%;
+			margin: 10px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+		input[type="submit"]{
+			width: 50%;
+			margin-left: 25%;
+			border-radius: 10px;
+		}
+		input[type="submit"]:hover{
+			background-color: #ABB2B9;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Reserva de entradas Parque de Atracciones</h1>
+	<div id="contenedor">
+		<form action="entradas_parque.php" method="get" target="mostrar">
+			<label>Entrada estándar</label>
+			<input type="number" name="estandar"><br>
+
+			<label>Mayores de 65 años</label>
+			<input type="number" name="mas65"><br>
+
+			<label>Infantil (hasta 12 años)</label>
+			<input type="number" name="infantil"><br>
+
+			<label>Día de la semana</label>
+			<select name="semana">
+				<option value="1">Lunes</option>
+				<option value="1">Martes</option>
+				<option value="1">Miércoles</option>
+				<option value="1">Jueves</option>
+				<option value="2">Viernes</option>
+				<option value="2">Sábado</option>
+				<option value="2">Domingo</option>						
+			</select><br><br>
+
+			<input type="submit" name="enviar" value="Calcular"><br>
+			
+		</form>
+
+		<div>
+			<iframe id="mostrar" name="mostrar"></iframe>
+		</div>
+	</div>
+
+</body>
+</html>

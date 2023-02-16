@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Galería de fotos</title>
+	<style type="text/css">
+
+		 * {margin:0; padding:0;}
+
+		body{
+			background-color: #8CE8FB;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+		   font-size: 1.1em;
+		  
+		}
+
+		#contenedor {
+			background-color: #7AA4F8;
+			width: 90%;
+			height: 600px;
+			padding: 10px;
+			box-shadow: 2px 2px 2px #313131;
+		    margin: 5px auto;
+		}
+
+		p.titulo {
+			color: #8B0002;
+			font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+			font-size: 35px;
+		 	width: 90%;
+			margin: 10px auto;
+			text-align: center;
+			background-image: linear-gradient(180deg,rgba(227,224,224,1.00) 0%,rgba(126,124,124,1.00) 100%);
+			box-shadow: 2px 2px 3px #000000;
+			text-shadow: 0px 0px 4px #870305;
+}
+
+
+		iframe {
+			  **display: inline-block;
+			  width: 90%;
+			  height: 510px;
+			  margin: 5px auto;
+             }
+
+        #boton {
+			  width: 120px;
+			  height: 35px;
+			  margin:5px 100px;
+			  box-shadow: 3px 3px 3px black;
+			}
+		#boton:hover {
+			  box-shadow: 0px 0px 3px black;
+			}
+
+		label{
+			    display: inline-block;
+			    width: 100px;
+			}
+
+		select{
+				  font-size: 1.1em;
+				  width: 200px;
+				}
+	</style>
+</head>
+<body>
+	<h2></h2>
+	<p class="titulo">Galería de fotos</p>
+	<div id="contenedor">
+	<form action="fotos02.php" method="get" target="resultado" id="form01">
+			<select id="vehiculos" name="vehiculos">
+					<option value="coch">Coches</option>
+					<option value="moto">Motos</option>
+					<option value="pais">Paisajes</option>
+		</select>
+
+		<input type="submit" id="boton" name="enviar" value="Mostrar">
+	</form>
+
+	<iframe id="resultado" name="resultado"></iframe>
+</div>
+	
+
+</body>
+</html>

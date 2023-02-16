@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Global Raiman SL - Telefonía</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/slider.css">
+	<link rel="stylesheet" type="text/css" href="../css/article.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="icon" type="image/png" href="../images/icono.ico">
+	<script type="text/javascript" src="../js/slider.js"></script>
+	
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			**font-size: 1.5em;
+			box-sizing:border-box;
+			color: #34495E;
+		}
+		#h2_principal{
+			text-align: center;
+		}
+
+		#contenedorFormulario{
+			width: 90%;
+			**background-color: red;
+			margin: auto;
+		}
+
+		select{
+			width: 40%;
+			margin: 40px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		input[type="radio"]{
+			width: 10px;
+			margin: 10px;
+
+		}
+
+		input[type="number"]{
+			width: 5%;
+			margin: 10px;
+			padding: 10px;
+			border-radius: 10px;
+
+		}
+
+		input[type="submit"],input[type="reset"]{
+			width: 25%;
+			margin: 20px 10%;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		fieldset{
+			margin: 20px;
+		}
+
+		legend{
+			border-radius: 10px;
+		}
+		iframe{
+			width: 100%;
+			height: 500px;
+			border-radius: 10px;
+		}
+		#calprecio{
+			text-align: center;
+			font-size: 3em;
+			color: #34495E;
+		}
+
+
+		
+				
+		
+	</style>
+</head>
+<body>
+	<header>
+		<div id="div_he1">
+			<img src="../images/logo.png" id="logotipo">
+			
+		</div>
+		<div id="div_he2">
+			<p>Información y Contratación <br>Teléfono de Contacto </p>
+			<h3 id="tel_contacto">639 043 155</h3>
+		</div>
+		<div id="div_he3">
+			<ul id="ul_header">
+				<li id="li_header"><a href="../index.html">INICIO</a></li>
+				<li id="li_header"><a href="formtelefono.html">TELEFONÍA</a></li>
+				<li id="li_header"><a href="formenergia.html">ENERGÍAS</a></li>
+				<li id="li_header"><a href="formseguros.html">SEGUROS</a></li>
+				<li id="li_header"><a href="formalarmas.html">ALARMAS</a></li>
+				<li id="li_header"><a href="formcajoncobros.html">CAJÓN DE COBROS</a></li>
+				<li id="li_header"><a href="formcursosbonificados.html">CURSOS BONIFICADOS</a></li> 
+			</ul>
+		</div>
+	</header>
+
+	<!--De aquí en adelante se define el SLIDER -->
+
+		<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+   <!--  <div class="numbertext">1 / 3</div> -->
+    <img src="../images/s1.png" style="width:100%" id="img1">
+   <!--  <div class="text">Imagen 1</div> -->
+  </div>
+
+  <div class="mySlides fade">
+    <!-- <div class="numbertext">2 / 3</div> -->
+    <img src="../images/s2.png" style="width:100% " id="img2">
+   <!--  <div class="text">Imagen 2</div> -->
+  </div>
+
+  <div class="mySlides fade">
+   <!--  <div class="numbertext">3 / 3</div> -->
+    <img src="../images/s3.png" style="width:100%" id="img3">
+   <!--  <div class="text"></div>Imagen 3 -->
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<!--Fin de SLIDER -->
+
+<!-- Inicio  de formulario de  telefonía-->
+<div id="contenedorFormulario">
+	<form action="formtelefono.php" method="post" target="resultado" enctype="multipart/form-data">
+		<h2 id="calprecio">Calcule su Precio</h2>
+
+		<fieldset>
+			<legend>¿Seleccione la opción que corresponda?</legend>
+			<select id="tcontratante" name="tcontratante">
+				<option value="0">Particular</opjtion>
+				<option value="1">Empresa</option>				
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Selecciones la velocidad de internet que desea contratar</legend>
+			<select id="fibraMegas" name="fibraMegas">
+				<option value="100">100 MB</option>
+				<option value="200">200 MB</option>
+				<option value="300"> 300 MB</option>
+				<option value="600"> 600 MB</option>
+				<option value="1024"> 1 GB</option>			
+		</select>
+	</fieldset>
+		<fieldset>
+				<legend>¿Desea contratar una linea Fija?</legend>
+				<input type="radio" id="lineafijaS" name="lineafija" value="1" checked>
+				<label for="lineafijaS">Sí</label><br>
+				<input type="radio" id="linefijaN" name="lineafija" value="0">
+				<label for="lineafinaN">No</label><br>
+		</fieldset>
+		<fieldset>
+				<legend>¿Desea contratar una linea Móvil?</legend>
+				<input type="radio" id="lineamovilS" name="lineamovil" value="1" checked>
+				<label for="lineafijaS">Sí</label><br>
+				<input type="radio" id="lineamovilN" name="lineamovil" value="0">
+				<label for="lineamovilN">No</label><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Seleccione la cantidad de lineas Móviles que desea contratar</legend>
+			<label for="lineasMoviles">Número Máximo, 5 lineas por persona: </label>
+			<input type="number" name="lineasMoviles" id="lineasMoviles" placeholder="1" min="1" max="5" value="1">			
+		</fieldset>
+
+		<fieldset>
+			<legend>Selecciona la cantidad de Datos del Móvil que desea contratar</legend>
+			<select id="movilDatos" name="movilDatos">
+				<option value="5">5 GB</option>
+				<option value="9">9 GB</option>
+				<option value="12">12 GB</option>
+				<option value="15">15 GB</option>
+				<option value="25">25 GB</option>
+				<option value="30">30 GB</option>
+				<option value="40">40 GB</option>
+				<option value="50">50 GB</option>
+				<option value="100">100 GB</option>
+				<option value="0">Datos ilimitados</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Seleccione un operador</legend>
+			<select id="operadoras" name="operadoras">
+				<option value="1">VIRGIN TELCO</option>
+				<option value="2">AMENA</option>
+				<option value="3">LOWI</option>
+				<option value="4">ORANGE</option>
+				<option value="5">YOIGO</option>
+				<option value="6">JAZZTEL</option>
+				<option value="7">VODAFONE</option>
+				<option value="8">MASMOVIL</option>
+				<option value="9">MOVISTAR</option>
+				<option value="10">SIMYO</option>
+				<option value="11">DIGI MOVIL</option>
+			</select>
+		</fieldset>		
+		<input type="submit" name="calcular" value="Calcular">
+		<input type="reset" value="Borrar todo">
+			<iframe name="resultado" id="resultado"></iframe>
+	</form><br><br>
+		<hr>
+</div>
+<div>
+	<h3>Consulte también nuestras ofertas</h3>
+</div>
+<!--Fin de formulario de telefonía -->
+
+
+<footer class="foot">
+	<h2><a href="../index.html">globalraiman.com</a> tu comparador de precios</h2>
+	
+	<div>
+		<ul>
+			<li class="link_menu_footer"><a href="formtelefono.html">Telefonía</a></li>
+			<li class="link_menu_footer"><a href="formenergia.html">Energías</a></li>
+			<li class="link_menu_footer"><a href="formseguros.html">Seguros</a></li>
+			<li class="link_menu_footer"><a href="formalarmas.html">Alarmas</a></li>
+			<li class="link_menu_footer"><a href="formcajoncobros.html">Cajón de cobros</a></li>
+			<li class="link_menu_footer"><a href="formcursosbonificados.html">Cursos bonificados</a></li>
+		</ul>
+	</div>
+	<hr>
+	<div class="div_foot_alineados">
+		<h3>Acerca de Global Raiman SL</h3>
+		<ul>
+			<li class="li_footer"><a href="">¿Cómo funciona?</a></li>
+			<li class="li_footer"><a href="">Sobre nosotros</a></li>
+			<li class="li_footer"><a href="">Últimas noticias</a></li>
+			<li class="li_footer"><a href="">Trabaja con nosotros</a></li>
+			<li class="li_footer"><a href="../templates/contacto.html">Contacto</a></li>
+			<br>
+			<br>
+		</ul>
+
+	</div><div class="div_foot_alineados">
+		<h3>Enlaces de Interés</h3>
+		<ul>
+			<li class="li_footer"><a href="">Aseguradoras</a></li>
+			<li class="li_footer"><a href="">Seguros Baratos</a></li>
+			<li class="li_footer"><a href="">Comparativa Seguros</a></li>
+			<li class="li_footer"><a href="">Calcular Seguro</a></li>
+			<li class="li_footer"><a href="">Guía Seguros Coche</a></li>
+			<li class="li_footer"><a href="">Asegurar Coche</a></li>
+			<br>
+		</ul>
+
+	</div><div class="div_foot_alineados">
+		<h3>Redes Sociales</h3>
+		<ul>
+			<li class="div_foot_alineados li_footer"><a href="https://twitter.com/raimanglobal?lang=es" target="_blank"><img src="../images/twitter.png"></a></li>
+			<li class="div_foot_alineados li_footer"><a href=""><img src="../images/youtube.png"></a></li>
+			<br>
+			<br>		
+		</ul>
+		<ul>
+			<li class="div_foot_alineados li_footer"><a href=""><img src="../images/facebook.png"></a></li>
+			<li class="div_foot_alineados li_footer"><a href=""><img src="../images/google.png"></a></li>
+			<br>
+			<br>
+			<br>
+		</ul>
+	</div>
+	
+</footer>
+
+
+</body>
+</html>

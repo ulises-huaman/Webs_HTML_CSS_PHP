@@ -1,0 +1,34 @@
+		.foot{
+			background-color: #106EB4;
+			position: relative;
+			top:1260px;
+			border-radius: 10px;
+			color: white;
+			text-align: center;
+		}
+
+		footer h2 a{
+			text-align: center;
+			color: white;
+			font-size: 2em;
+		}
+
+		.link_menu_footer{
+			list-style-type: none;
+			display: inline-block;
+			margin: 2%;
+		}
+
+		.div_foot_alineados{
+			display: inline-block;
+			width: 25%;
+			margin: 3%;
+			position: relative;
+			top: 5px;
+			**background-color: red;
+		}
+
+		.li_footer{
+			list-style-type: none;
+			text-align: left;
+		}
